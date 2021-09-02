@@ -26,8 +26,8 @@ To get a local copy up and running follow these simple example steps.
 ### Setup
 
 ```bash
-git clone https://github.com/usmansbk/react-group-project.git
-cd ./react-group-project
+git clone git@github.com:hiromataba/React-capstone.git
+cd ./React-capstone
 ```
 
 ### Install
