@@ -54,22 +54,13 @@ npm run build
 npm test
 ```
 
-## Authors
-
-👤 **Babakolo Usman Suleiman**
-
-- GitHub: [@usmansbk](https://github.com/usmansbk)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/usmansbk/)
+## Author
 
 👤 **Hiro Mataba**
 
 - GitHub: [@hiromataba](https://github.com/hiromataba)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/aganzemataba)
 
-👤 **Omoogun Olawale**
-
-- GitHub: [@olawale-o](https://github.com/olawale-o)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/olawaleomoogun/)
 
 ## 🤝 Contributing
 
