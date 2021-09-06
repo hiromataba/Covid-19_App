@@ -37,12 +37,60 @@ const Grid = ({ items = [] }) => (
 );
 
 const Home = () => {
-  const greeting = 'Hello';
+  const continent = 'Europe';
+
+  const dispatch = useDispatch();
+  const { items, totalConfirmed, loading } = useSelector((state) => ({
+    ...state.countries,
+    loading: state.loadingBar.default,
+  }));
+
+  useEffect(() => {
+    if (!items.length) {
+      dispatch(fetchCountries(continent));
+    }
+  }, []);
+
+  if (loading) {
+    return null;
+  }
+
   return (
-    <div>
-      <h1>{greeting}</h1>
-    </div>
+    <section>
+      <header className="App-header">
+        <Icon name="arrow_back_ios" />
+        <h4>2021</h4>
+        <h5 className="App-header-title">confirmed cases</h5>
+        <Icon name="mic" />
+        <div className="pl-5">
+          <Icon name="settings" />
+        </div>
+      </header>
+      <div className="Home-banner">
+        <div className="Home-banner-left">
+          <img src={map} alt="" className="App-map" />
+        </div>
+        <div className="Home-banner-right">
+          <h1 className="App-title">{continent}</h1>
+          <p className="App-subtitle">{`${formatNumber(totalConfirmed)} cases`}</p>
+        </div>
+      </div>
+      <section className="Home-stats">
+        <h5 className="App-section-title">STATS BY COUNTRY</h5>
+        <Grid items={items} />
+      </section>
+    </section>
   );
 };
 
 export default Home;
+
+Item.propTypes = {
+  confirmed: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+};
+
+Grid.propTypes = {
+  items: PropTypes.arrayOf(PropTypes.shape(Item.propTypes)).isRequired,
+};
+
