@@ -24,6 +24,18 @@ const Item = ({ confirmed, name }) => (
   </div>
 );
 
+const Grid = ({ items = [] }) => (
+  <ul className="Home-grid">
+    {items.map(({ name, confirmed }) => (
+      <li key={name} className="Home-grid-item">
+        <Link to={`/country/${name}`}>
+          <Item confirmed={confirmed} name={name} />
+        </Link>
+      </li>
+    ))}
+  </ul>
+);
+
 const Home = () => {
   const greeting = 'Hello';
   return (
