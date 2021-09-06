@@ -1,4 +1,5 @@
-import { render, screen, fireEvent } from '../test-utils';
+import '@testing-library/jest-dom';
+import { render, screen, fireEvent } from './test-utils';
 import App from './App';
 
 jest.mock('./redux/countries/api.js');
