@@ -1,19 +1,24 @@
-# React Capstone
+# Covid-19 App Tracker
 
 ![Microverse](https://img.shields.io/badge/Microverse-blueviolet)
 
-> Book rockets and join space missions
+> Covid-19 App Tracker
 
-Space Travelers' Hub is an application that allows you to book rockets and join space missions for commerial and scientific purpose.
+![covidapp](https://user-images.githubusercontent.com/75126481/132212387-6731c705-3b61-4f9a-9ba0-4610c8ba055e.png)
+
+This application displays Covid-19 information from different data sources.
 
 ## Built With
 
-- React
-- Redux
+- React & Redux
 
 ## Live Demo
 
-[Live Demo Link](https://competent-pasteur-0ea516.netlify.app/)
+[Live Demo](https://hiro-covid-app.herokuapp.com/)
+
+## Project Video Description
+
+[Video Presentation](https://www.loom.com/share/8f136f08d57c4b2681cecf84c5d755bd)
 
 ## Getting Started
 
@@ -26,8 +31,8 @@ To get a local copy up and running follow these simple example steps.
 ### Setup
 
 ```bash
-git clone git@github.com:hiromataba/React-capstone.git
-cd ./React-capstone
+git clone git@github.com:hiromataba/Covid-19_App.git
+cd ./Covid-19_App
 ```
 
 ### Install
@@ -61,7 +66,6 @@ npm test
 - GitHub: [@hiromataba](https://github.com/hiromataba)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/aganzemataba)
 
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
@@ -75,7 +79,8 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Microverse
-- App Logo from [FlatIcons](https://www.flaticon.com/free-icon/planet_3212567?term=space&page=1&position=19&page=1&position=19&related_id=3212567&origin=style)
+- Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs))
+- Powered by [Covid-19-API](https://github.com/M-Media-Group/Covid-19-API)
 
 ## 📝 License
 
