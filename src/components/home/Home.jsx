@@ -9,6 +9,21 @@ import './Home.css';
 import virus from '../../assets/virus.svg';
 import map from '../../assets/europe.png';
 
+const Item = ({ confirmed, name }) => (
+  <div className="Home-item-content">
+    <div className="Home-item-icon">
+      <Icon name="arrow_circle_right" />
+    </div>
+    <div className="Home-item-top">
+      <img src={virus} alt="" className="Home-item-image" />
+    </div>
+    <div className="Home-item-bottom">
+      <h4 className="App-title">{name}</h4>
+      <p className="App-subtitle">{formatNumber(confirmed)}</p>
+    </div>
+  </div>
+);
+
 const Home = () => {
   const greeting = 'Hello';
   return (
