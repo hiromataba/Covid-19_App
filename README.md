@@ -14,6 +14,7 @@ This application displays Covid-19 information from different data sources.
 
 ## Live Demo
 
+[Live Demo](https://hiro-covid-app.herokuapp.com/)
 
 ## Getting Started
 
