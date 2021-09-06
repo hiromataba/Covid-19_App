@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { fetchCountries } from '../../redux/countries/countries';
 import Icon from '../Icon';
-import formatNumber from '../../utils/formatNumber';
+import formatNumber from '../utils/formatNumber';
 import './Home.css';
 import virus from '../../assets/virus.svg';
 import map from '../../assets/europe.png';
@@ -72,7 +72,11 @@ const Home = () => {
         </div>
         <div className="Home-banner-right">
           <h1 className="App-title">{continent}</h1>
-          <p className="App-subtitle">{`${formatNumber(totalConfirmed)} cases`}</p>
+          <p className="App-subtitle">
+            {`${formatNumber(
+              totalConfirmed,
+            )} cases`}
+          </p>
         </div>
       </div>
       <section className="Home-stats">
@@ -93,4 +97,3 @@ Item.propTypes = {
 Grid.propTypes = {
   items: PropTypes.arrayOf(PropTypes.shape(Item.propTypes)).isRequired,
 };
-
