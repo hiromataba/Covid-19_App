@@ -4,6 +4,7 @@
 
 > Covid-19 Tracker
 
+![covidapp](https://user-images.githubusercontent.com/75126481/132212387-6731c705-3b61-4f9a-9ba0-4610c8ba055e.png)
 
 This application displays Covid-19 information from different data sources.
 
