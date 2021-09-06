@@ -1,4 +1,4 @@
-# Covid-19 Tracker
+# Covid-19 App Tracker
 
 ![Microverse](https://img.shields.io/badge/Microverse-blueviolet)
 
