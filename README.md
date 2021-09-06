@@ -16,6 +16,10 @@ This application displays Covid-19 information from different data sources.
 
 [Live Demo](https://hiro-covid-app.herokuapp.com/)
 
+## Project Video Description
+
+[Video Presentation](https://www.loom.com/share/8f136f08d57c4b2681cecf84c5d755bd)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
@@ -27,8 +31,8 @@ To get a local copy up and running follow these simple example steps.
 ### Setup
 
 ```bash
-git clone git@github.com:hiromataba/React-capstone.git
-cd ./React-capstone
+git clone git@github.com:hiromataba/Covid-19_App.git
+cd ./Covid-19_App
 ```
 
 ### Install
