@@ -40,7 +40,7 @@ const Details = () => {
       </header>
       <div className="Details-banner">
         <div className="Details-banner-left">
-          <img src={image} alt="" className="App-map" />
+          <img src={image} alt="map view" className="App-map" />
         </div>
         <div className="Details-banner-right">
           <h1 className="App-title">{All.country}</h1>

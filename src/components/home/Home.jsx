@@ -15,7 +15,7 @@ const Item = ({ confirmed, name }) => (
       <Icon name="arrow_circle_right" />
     </div>
     <div className="Home-item-top">
-      <img src={virus} alt="" className="Home-item-image" />
+      <img src={virus} alt="virus view" className="Home-item-image" />
     </div>
     <div className="Home-item-bottom">
       <h4 className="App-title">{name}</h4>
@@ -68,7 +68,7 @@ const Home = () => {
       </header>
       <div className="Home-banner">
         <div className="Home-banner-left">
-          <img src={map} alt="" className="App-map" />
+          <img src={map} alt="Banner view" className="App-map" />
         </div>
         <div className="Home-banner-right">
           <h1 className="App-title">{continent}</h1>
