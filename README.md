@@ -23,7 +23,7 @@ This application displays Covid-19 information from different data sources.
 
 ## Project Video Description
 
-[Video Presentation](https://www.loom.com/share/8f136f08d57c4b2681cecf84c5d755bd)
+[Video Presentation](https://www.loom.com/share/b095a77890e744979539d2ba736d84c3)
 
 ## Getting Started
 
