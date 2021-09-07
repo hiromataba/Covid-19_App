@@ -5,6 +5,11 @@
   gap: 30px;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 .Home-banner-right {
   display: flex;
   flex-direction: column;
@@ -20,6 +25,8 @@
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 1fr;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .Home-grid-item:hover {
