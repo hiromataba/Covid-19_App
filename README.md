@@ -4,7 +4,12 @@
 
 > Covid-19 App Tracker
 
-![covidapp](https://user-images.githubusercontent.com/75126481/132212387-6731c705-3b61-4f9a-9ba0-4610c8ba055e.png)
+<p align="center">&nbsp;
+ 
+| Continent |   Country |
+| ---------- | ----------- |
+ | ![europe](https://user-images.githubusercontent.com/75126481/132328881-f93cca55-3ed2-4e34-bbd5-8c9ca4766ec2.png) | ![russia](https://user-images.githubusercontent.com/75126481/132328989-3857101d-393a-47e3-85ac-a166e26bad67.png)|
+</p>
 
 This application displays Covid-19 information from different data sources.
 
