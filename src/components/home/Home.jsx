@@ -49,7 +49,7 @@ const Home = () => {
         </div>
       </div>
       <section className="Home-stats">
-        <h5 className="App-section-title">STATS BY COUNTRY</h5>
+        <h5 className="App-section-title">STATS By COUNTRY</h5>
         <Grid items={items} />
       </section>
     </section>
