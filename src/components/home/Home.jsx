@@ -1,40 +1,11 @@
-import PropTypes from 'prop-types';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
 import { fetchCountries } from '../../redux/countries/countries';
 import Icon from '../Icon';
 import formatNumber from '../utils/formatNumber';
 import './Home.css';
-import virus from '../../assets/virus.svg';
 import map from '../../assets/europe.png';
-
-const Item = ({ confirmed, name }) => (
-  <div className="Home-item-content">
-    <div className="Home-item-icon">
-      <Icon name="arrow_circle_right" />
-    </div>
-    <div className="Home-item-top">
-      <img src={virus} alt="" className="Home-item-image" />
-    </div>
-    <div className="Home-item-bottom">
-      <h4 className="App-title">{name}</h4>
-      <p className="App-subtitle">{formatNumber(confirmed)}</p>
-    </div>
-  </div>
-);
-
-const Grid = ({ items = [] }) => (
-  <ul className="Home-grid">
-    {items.map(({ name, confirmed }) => (
-      <li key={name} className="Home-grid-item">
-        <Link to={`/country/${name}`}>
-          <Item confirmed={confirmed} name={name} />
-        </Link>
-      </li>
-    ))}
-  </ul>
-);
+import Grid from './Grid';
 
 const Home = () => {
   const continent = 'Europe';
@@ -68,14 +39,12 @@ const Home = () => {
       </header>
       <div className="Home-banner">
         <div className="Home-banner-left">
-          <img src={map} alt="" className="App-map" />
+          <img src={map} alt="Banner view" className="App-map" />
         </div>
         <div className="Home-banner-right">
           <h1 className="App-title">{continent}</h1>
           <p className="App-subtitle">
-            {`${formatNumber(
-              totalConfirmed,
-            )} cases`}
+            {`${formatNumber(totalConfirmed)} cases`}
           </p>
         </div>
       </div>
@@ -88,12 +57,3 @@ const Home = () => {
 };
 
 export default Home;
-
-Item.propTypes = {
-  confirmed: PropTypes.number.isRequired,
-  name: PropTypes.string.isRequired,
-};
-
-Grid.propTypes = {
-  items: PropTypes.arrayOf(PropTypes.shape(Item.propTypes)).isRequired,
-};
